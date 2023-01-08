@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="form-box">
+      <form name="formRegistration">
+        <div>
+          <input type="hidden" class="hidden">
+          <label for="formName">Login</label>
+          <input
+            type="text"
+            id="formName"
+            class="formInput"
+            placeholder="Enter login"
+            
+          />
+        </div>
+        <div>
+          <label for="formPassword">Password</label>
+          <input
+            type="password"
+            class="formInput"
+            id="formPassword"
+            placeholder="Enter password"
+           
+          />
+        </div>
+        <div>
+          <label for="formEmail">Email address</label>
+          <input
+            type="text"
+            class="formInput"
+            id="formEmail"
+            placeholder="Enter email"
+            
+          />
+        </div>
+        <button type="button" class="btn-add btn-add-initialView">Add user</button>
+        <button type="button" class="btn-add btn-add-initialView btnNewAdd">New add user</button>
+      </form>
+    </div>
+
+    <div class="table-box">
+      <table class="table">
+        <thead>
+          <tr class="t-head">
+            <th>№</th>
+            <th>Login</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tableContent">
+          <!-- <tr data="d">
+            <th>  </th>
+            <th>Login</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr> -->
+          <!-- <tr>
+            <th>   </th>
+            <th>Login</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>

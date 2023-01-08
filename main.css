@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-box, .table-box{
+    width: 40%;
+    height: 85%;
+}
+.formInput{
+    width: 80%;
+    min-height: 35px;
+    border: none;
+    box-shadow: 0 0 2px black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.formInput:hover, .formInput:focus{
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px gray;
+}
+.formInput:focus{
+    box-shadow: 0 0 5px black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form>div>label{
+    font-size: 20px;
+    margin: 0 5px;
+}
+.btn-add{
+    width: 80px;
+    min-height: 30px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: 0.3s;
+}
+.btn-add-initialView{
+   border: 1px solid green;
+   color:  green;
+}
+.btn-add-right:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(35, 136, 35);
+}
+.btn-add-right:active{
+    transform: scale(1.1);
+}
+
+.t-head{
+    box-shadow: 0 0 5px gray;
+    height: 30px;
+}
+.t-head>th{
+    width:10%;
+   font-weight: 600;
+  
+}
+#tableContent>tr>th{
+    font-weight: 200;
+}
+#tableContent>tr{
+    height: 30px;
+
+}
+.t-head, #tableContent{
+    font-size: 17px;
+}
+.green:focus, .green{
+    box-shadow: 0 0 5px green;
+}
+.red:focus, .red{
+    box-shadow: 0 0 5px red;
+}
+.btnNewAdd{
+  display: none;
+}
+
+table tbody tr {
+  counter-increment: rowNumber;
+}
+
+table tr td:first-child::before {
+  content: counter(rowNumber);
+}
+
+th, td{
+  padding: 3px;
+  text-align: center;
+}
+.BtnDelete, .BtnEdit{
+    border: none;
+    box-shadow: 0 0 5px gray;
+    width: 60px;
+    height: 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.BtnDelete{
+    background-color: lightcoral;
+}
+.BtnEdit{
+    background-color: rgb(244, 244, 36);
+}
+
+@-webkit-keyframes swing {
+    15% {
+      -webkit-transform: translateX(9px);
+      transform: translateX(9px);
+    }
+    30% {
+      -webkit-transform: translateX(-9px);
+      transform: translateX(-9px);
+    }
+    40% {
+      -webkit-transform: translateX(6px);
+      transform: translateX(6px);
+    }
+    50% {
+      -webkit-transform: translateX(-6px);
+      transform: translateX(-6px);
+    }
+    65% {
+      -webkit-transform: translateX(3px);
+      transform: translateX(3px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes swing {
+    15% {
+      -webkit-transform: translateX(9px);
+      transform: translateX(9px);
+    }
+    30% {
+      -webkit-transform: translateX(-9px);
+      transform: translateX(-9px);
+    }
+    40% {
+      -webkit-transform: translateX(6px);
+      transform: translateX(6px);
+    }
+    50% {
+      -webkit-transform: translateX(-6px);
+      transform: translateX(-6px);
+    }
+    65% {
+      -webkit-transform: translateX(3px);
+      transform: translateX(3px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  .swing{
+    border: 1px solid red;
+    color:  red;
+  }
+  .swing:active, .swing:hover {
+    -webkit-animation: swing 0.6s ease;
+    animation: swing 0.6s ease;
+     -webkit-animation-iteration-count: 1;
+     animation-iteration-count: 1;
+     background-color: red;
+     color: white;
+     border: none;
+     box-shadow: 0 0 2px red;
+     cursor: pointer;
+
+  }
+  
